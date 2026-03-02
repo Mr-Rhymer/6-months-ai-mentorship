@@ -1,1 +1,53 @@
+# Day 1 Log - Feb 23, 2026
 
+**What I learned:**
+- Interactive shell (REPL) for quick testing
+- Data types: int, float, str
+- input() always returns string → need int() for numbers
+- Variables store values
+- print() with f-strings is clean
+- Basic operators: +, *, /, //, **, len()
+
+**What worked:**
+- Greeting program runs, math works, modifications added
+
+**Time spent:** ~55 min
+**Mood after exams:**  good
+
+Commit message idea: Day 1 - Greeting program + interactive shell experiments
+
+
+
+
+# Day 2 Log – Feb 24, 2026
+
+**What I learned:**
+- String methods: upper/lower/title/strip/replace/find/len
+- Slicing strings [start:end]
+- Better formatting (ljust, title, etc.)
+
+**What worked:**
+- Motivation generator runs, added conditions & formatting
+
+
+**Time spent:** 1hr 48mins
+
+Commit idea: Day 2 – String methods + motivation generator
+
+
+
+
+# Day 3 – Feb 26/27, 2026
+
+What I learned:
+- if / elif / else for decisions
+- Comparison operators and booleans
+- How to make program respond differently based on input
+
+What I built:
+- Upgraded greeting with conditional messages (age, food, etc.)
+
+Time spent: 54 min
+Study days streak: 3
+
+Commit message idea: Day 3 - Added conditionals to greeting program
