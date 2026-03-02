@@ -3,10 +3,10 @@ print("=== Simple Ghana Grind Calculator ===")
 print("Enter two numbers and operation (+ - * ** % /)")
 print("Type 'q' to quit anytime\n")
 
-for i in range(5):
+while True:
     num1_input = input("First number (or 'q' to quit): ").strip()
 
-    if num1_input.lower() == 'q':
+    if num1_input.lower() == 'q' or num1_input.lower() == 'quit':
         print("Calculator closed. Good grind today!")
         break
 
@@ -51,4 +51,3 @@ for i in range(5):
     elif result < 0:
         print("Negative vibes... ")
     print("-" * 40 + "\n")
-    i += 1

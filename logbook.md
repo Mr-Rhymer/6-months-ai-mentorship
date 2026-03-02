@@ -51,3 +51,18 @@ Time spent: 54 min
 Study days streak: 3
 
 Commit message idea: Day 3 - Added conditionals to greeting program
+
+
+# Day 4 Log – Mar 3, 2026
+
+What I learned:
+- while True loop + break to repeat program
+- try/except for safe number conversion
+- More conditionals for operations & messages
+
+What I built:
+- Simple calculator that loops, handles errors, + personal touches
+
+Time spent: 1hr 2 mins
+
+Commit idea: Day 4 - Simple calculator with loop & conditionals
