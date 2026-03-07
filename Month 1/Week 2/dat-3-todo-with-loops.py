@@ -35,6 +35,6 @@ pending_tasks = [task for task, status in todos.items() if status == "pending"]
 if pending_tasks:
     print("\n Your pending tasks are:")
     for task in pending_tasks:
-        print(f"  • {task}")
+        print(f"  • {task.title()}")
 else:
     print("\n No pending tasks! Great job!")
