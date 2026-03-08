@@ -1,0 +1,30 @@
+{
+  "eat": {
+    "status": "DONE",
+    "priority": "high"
+  },
+  "code": {
+    "status": "pending",
+    "priority": "high"
+  },
+  "bathe": {
+    "status": "DONE",
+    "priority": "medium"
+  },
+  "write": {
+    "status": "pending",
+    "priority": "low"
+  },
+  "read": {
+    "status": "pending",
+    "priority": "medium"
+  },
+  "cook": {
+    "status": "DONE",
+    "priority": "high"
+  },
+  "feed the brain": {
+    "status": "pending",
+    "priority": "medium"
+  }
+}
