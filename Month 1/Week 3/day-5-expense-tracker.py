@@ -3,6 +3,7 @@ import json
 expenses = []
 
 def add_expense(amount, category):
+    '''Add a new expense with the given amount and category.'''
     try:
         amount = float(amount)
         expenses.append({"amount": amount, "category": category})
@@ -11,6 +12,7 @@ def add_expense(amount, category):
         print("Invalid amount. Please enter a valid number.")
 
 def view_all():
+    '''Display all recorded expenses.'''
     if not expenses:
         print("No expenses recorded.")
     else:
@@ -19,10 +21,15 @@ def view_all():
             print(f"{idx}. ${expense['amount']:.2f} - {expense['category']}")
 
 def total_spent():
-    total = sum(expense['amount'] for expense in expenses)
-    print(f"Total spent: ${total:.2f}")
+    '''Calculate and display the total amount spent.'''
+    if not expenses:
+        print("No expenses recorded.")
+    else:
+        total = sum(expense['amount'] for expense in expenses)
+        print(f"Total spent: ${total:.2f}")
 
 def monthly_summary():
+    '''Provide a summary of total and average expenses for the month.'''
     if not expenses:
         print("No expenses recorded.")
     else:
@@ -34,6 +41,7 @@ def monthly_summary():
 
 
 def del_expense(index):
+    '''Delete an expense by its index.'''
     try:
         index = int(index) - 1
         if 0 <= index < len(expenses):
@@ -46,6 +54,7 @@ def del_expense(index):
 
 
 def save_expenses(filename):
+    '''Save expenses to a JSON file.'''
     try:        
         with open(filename, 'w', encoding='utf-8') as file:
             json.dump(expenses, file, indent=4)
@@ -55,6 +64,7 @@ def save_expenses(filename):
 
 
 def view_by_category():
+    '''View total expenses by category.'''
     if not expenses:
         print("No expenses recorded.")
         return
@@ -74,6 +84,7 @@ def view_by_category():
         print(f"{category}: ${total:.2f} total ({count} expenses, avg: ${average:.2f})")
 
 def load_expenses(filename):
+    '''Load expenses from a JSON file.'''
     try:
         global expenses
         with open(filename, 'r', encoding='utf-8') as file:
@@ -86,6 +97,7 @@ def load_expenses(filename):
 
 
 def main():
+    '''Main function to run the expense tracker application.'''
     while True:
         print("\nExpense Tracker Menu:")
         print("1. Add Expense")
