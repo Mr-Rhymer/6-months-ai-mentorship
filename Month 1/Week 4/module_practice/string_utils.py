@@ -48,3 +48,12 @@ def capitalize_words(s):
             capitalized_word = word  # Handle empty words (rare, but safe)
         capitalized_words.append(capitalized_word)
     return ' '.join(capitalized_words)
+
+
+if __name__ == "__main__":
+    print("Testing string_utils module directly...")
+    test_string = "hello world"
+    print(f"Original: {test_string}")
+    print(f"Reversed: {reverse_string(test_string)}")
+    print(f"Vowels: {count_vowels(test_string)}")
+    print(f"Capitalized: {capitalize_words(test_string)}")

@@ -81,4 +81,14 @@ What I built:
 What confused me: 
 - Looping through word to capitalize them without using .capitalize() and .title()
 
+# Day 2 Log - Mar 16, 2026
+What I learnt:
+- if __name__== "__main__" & importing styles
+
+What I built:
+- A script that tests all the importing styles and an updated version of the string utilities program.
+
+Time spent: 57 mins
+
+
 
