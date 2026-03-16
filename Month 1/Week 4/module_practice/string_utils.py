@@ -10,7 +10,10 @@ def reverse_string(s):
     Returns:
         str: The reversed string.
     """
-    return s[::-1]
+    reversed_str = ""
+    for char in range(len(s) - 1, -1, -1):
+        reversed_str += s[char]
+    return reversed_str
 
 def count_vowels(s):
     """
@@ -36,4 +39,12 @@ def capitalize_words(s):
     Returns:
         str: The string with each word capitalized.
     """
-    return s.title()
+    words = s.split()
+    capitalized_words = []
+    for word in words:
+        if word:  # Check if the word is not empty
+            capitalized_word = word[0].upper() + word[1:].lower()
+        else:
+            capitalized_word = word  # Handle empty words (rare, but safe)
+        capitalized_words.append(capitalized_word)
+    return ' '.join(capitalized_words)

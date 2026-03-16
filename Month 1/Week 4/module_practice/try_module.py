@@ -7,7 +7,7 @@ print("1. Reverse a string")
 print("2. Count vowels in a string")
 print("3. Capitalize words in a string")
 choice = input("Enter your choice (1, 2, or 3): " )
-s = input("Enter a string to process: ")
+s = input("Enter a string to process1: ")
 if choice == '1':
    
     result = reverse_string(s)

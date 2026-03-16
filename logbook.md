@@ -66,3 +66,19 @@ What I built:
 Time spent: 1hr 2 mins
 
 Commit idea: Day 4 - Simple calculator with loop & conditionals
+
+
+
+## Week 4 
+
+# Day 1 Log - Mar 15, 2026
+What I learnt:
+- Modules
+
+What I built:
+- I built a string utilities program using imports from my module.
+
+What confused me: 
+- Looping through word to capitalize them without using .capitalize() and .title()
+
+
