@@ -93,6 +93,9 @@ Time spent: 57 mins
 # Day 3 Log - Mar 17, 2026
 What I learnt:
 - Virtual environments
+- What pip list does
+- A little about how to install packages. eg. I installed cowsay
+- I also learnt that packages that are installed ina virtual environment does not work outside the environment, becuase when I deactivated the environment, imorting cowsay gave me an error.
 
 What confused me:
 - Activation and deactivation of the virtual environment.
