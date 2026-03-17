@@ -1,0 +1,15 @@
+What is a virtual environment?
+ A virtual environment is simply an isolated folder that can install and use it's own packages without the interference of the global environment.
+
+Why should you always use one?
+ It prevents errors that crashes your code due to conflicting packages in the global environment
+
+The commands to create, activate, and deactivate a venv.
+ To create
+  python -m venv .venv
+ 
+ To activate
+  .venv\Scripts\Activate.ps1
+
+ To deactivate 
+  deactivate

@@ -90,5 +90,14 @@ What I built:
 
 Time spent: 57 mins
 
+# Day 3 Log - Mar 17, 2026
+What I learnt:
+- Virtual environments
+
+What confused me:
+- Activation and deactivation of the virtual environment.
+
+Time spent: 1hr 21mins
+
 
 
