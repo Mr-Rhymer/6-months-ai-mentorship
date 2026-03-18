@@ -103,4 +103,22 @@ What confused me:
 Time spent: 1hr 21mins
 
 
+# Day 4 Log - Mar 18, 2026
 
+What I learnt:
+- Installing packages into your virtual environment
+- Saving the packages installed in a requirements.txt file
+- Reproducing packages stored in previous environment from requirements.txt
+- Fetching from an API
+
+What I built:
+- I activated my environment with '.venv\Scripts\Activate.ps1'
+- Installed requests with 'pip install requests'
+- Saved requests to requirements.txt with 'pip freeze > requirements.txt'
+- Created a new environment and downloaded my packages into it with 'pip install -r requirements.txt'
+- Built a script that fetches a quote from an API
+
+What broke:
+- The API I started with was not working.
+
+Time spent: 2hr 2mins
