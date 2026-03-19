@@ -122,3 +122,15 @@ What broke:
 - The API I started with was not working.
 
 Time spent: 2hr 2mins
+
+# Day 5 Log - Mar 19, 2026
+What I built:
+- A project on the expense tracker
+- A well structured project that can import from different modules
+
+What challenged me:
+- I still dont get the concept very well.
+
+Time spent: 1hr 1min
+
+
