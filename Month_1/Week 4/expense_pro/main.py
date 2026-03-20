@@ -25,23 +25,24 @@ def main():
         elif choice == '2':
             result = expenses.view_expenses(expenses_list)
             if isinstance(result, str):
-                file_utils.save_data('expenses.json', expenses_list)
                 print(result)
             else:
                 for item in result:
-                    file_utils.save_data('expenses.json', expenses_list)
                     print(item)
         
         elif choice == '3':
-            total = expenses.total_spent(expenses_list)
-            file_utils.save_data('expenses.json', expenses_list) 
+            total = expenses.total_spent(expenses_list) 
             print(f"Total spent: {total}")
         
         elif choice == '4':
-            index = int(input("Enter expense index to delete: "))
-            message = expenses.delete_expense(expenses_list, index)
-            file_utils.save_data('expenses.json', expenses_list) 
-            print(message)
+            try:
+             index = int(input("Enter expense index to delete: ")) -1
+            
+             message = expenses.delete_expense(expenses_list, index)
+             file_utils.save_data('expenses.json', expenses_list) 
+             print(message)
+            except ValueError:
+                print("Invalid input. Please enter a number.")
 
         elif choice == '5':
             file_utils.save_data('expenses.json', expenses_list)

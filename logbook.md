@@ -133,4 +133,14 @@ What challenged me:
 
 Time spent: 1hr 1min
 
+# Day 6 Log: Mar 20, 2026
+
+What I did:
+- Finallised the expense tracker project
+- Added a README and .gitignore.
+
+What I clarified:
+- What the __init__.py does.
+
+Time spent: 1hr 18mins
 
