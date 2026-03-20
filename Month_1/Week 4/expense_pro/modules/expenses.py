@@ -7,9 +7,6 @@ def add_expense(expenses,date,amount,category):
         "category": category
     }
     expenses.append(expense)
-    with open('expenses.json', 'w') as file:
-        json.dump(expenses, file)
-
 def view_expenses(expenses):
     if not expenses:
         return "No expenses recorded."
@@ -25,8 +22,6 @@ def total_spent(expenses):
 def delete_expense(expenses, index):
     if 0 <= index < len(expenses):
         del expenses[index]
-        with open('expenses.json', 'w') as file:
-            json.dump(expenses, file)
         return "Expense deleted."
     else:
         return "Invalid index."
