@@ -144,3 +144,20 @@ What I clarified:
 
 Time spent: 1hr 18mins
 
+
+# MONTH 2
+
+
+# Week 1
+
+# Day 1 Log: Mar 21, 2026
+What I built:
+- I started a project that fetches the temperature of my current location.
+
+What I learnt:
+- I learnt that APIs enables programs to communicate and also I learnt that json is a standard format of data exchange over the web.
+
+Any issues:
+- Not even a single one
+
+Time spent: 49 mins
