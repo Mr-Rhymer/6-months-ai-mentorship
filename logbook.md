@@ -161,3 +161,15 @@ Any issues:
 - Not even a single one
 
 Time spent: 49 mins
+
+# Day 2 Log: Mar 23, 2026
+What I learnt:
+- APIs in full and well explained.
+
+What I built:
+- A script that take a city name as input, append it to an endpoint to find the coordinates of that city and uses the coordinates as an input to a second endpoint and prints out the weather conditions for the city.
+
+Issues I faced:
+- Yesterday my code was full of errors becuase I didn't get the concept well but today I have grasped the concept in detail so my code caught no errors
+
+Time spent: 1hr 2mins
