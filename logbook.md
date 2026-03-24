@@ -173,3 +173,9 @@ Issues I faced:
 - Yesterday my code was full of errors becuase I didn't get the concept well but today I have grasped the concept in detail so my code caught no errors
 
 Time spent: 1hr 2mins
+
+# Day 3 Log: Mar 24, 2026
+What I built:
+- An updated version of the weather cli script that handles errors properly and mulpile search finds, it is also more user friendly.
+
+Time spent: 1hr 6mins:
