@@ -178,4 +178,10 @@ Time spent: 1hr 2mins
 What I built:
 - An updated version of the weather cli script that handles errors properly and mulpile search finds, it is also more user friendly.
 
-Time spent: 1hr 6mins:
+Time spent: 1hr 6mins
+
+# Day 4 Log: Mar 25, 2026
+What I built:
+- An updated version of the weather cli script that handles errors properly and mulpile search finds, it is also more user friendly and allows the use of system arguments.
+
+Time spent: 32mins

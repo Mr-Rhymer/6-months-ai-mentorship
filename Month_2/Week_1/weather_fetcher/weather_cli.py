@@ -1,6 +1,11 @@
 import requests
+import sys
 
-city_name = input("Enter the city name: ")
+if len(sys.argv) > 1:
+    city_name = sys.argv[1]          # take first argument
+else:
+    city_name = input("Enter the city name: ")
+ 
 geocode_url = "https://geocoding-api.open-meteo.com/v1/search"
 geocode_params = {"name": city_name}
 
@@ -69,4 +74,15 @@ current = weather_data["current_weather"]
 print(f"\nWeather in {official_name}, {country}:")
 print(f"Temperature: {current['temperature']}°C")
 print(f"Wind Speed: {current['windspeed']} km/h")
-print(f"Wind Direction: {current['winddirection']}°")
+print(f"Wind Direction: {current['winddirection']}°") 
+
+
+save = input("\nSave report to file? (y/n): ").lower()
+if save == 'y':
+    report = f"Weather in {official_name}, {country}:\n"
+    report += f"Temperature: {current['temperature']}°C\n"
+    report += f"Wind Speed: {current['windspeed']} km/h\n"
+    report += f"Wind Direction: {current['winddirection']}°\n"
+    with open("weather_report.txt", "w") as f:
+        f.write(report)
+    print("Report saved to weather_report.txt")
