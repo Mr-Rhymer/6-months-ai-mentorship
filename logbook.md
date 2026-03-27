@@ -195,3 +195,12 @@ What I built:
 - A script that has the class product and I imported that script into another script that contains some objects i have created.
 
 Time spent: 57mins 
+
+# Day 2 Log: 27 Mar, 2026
+What I learnt: 
+- OOP composition, separation of concerns, json serialisation of custom objects
+
+What I built:
+- An inventory manager with separation of concerns
+
+Time spent: 59mins 
