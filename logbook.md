@@ -185,3 +185,13 @@ What I built:
 - An updated version of the weather cli script that handles errors properly and mulpile search finds, it is also more user friendly and allows the use of system arguments.
 
 Time spent: 32mins
+ # Week 2
+
+# Day 1 Log: 27 Mar, 2026
+What I learnt: 
+- OOP basics
+
+What I built:
+- A script that has the class product and I imported that script into another script that contains some objects i have created.
+
+Time spent: 57mins 
