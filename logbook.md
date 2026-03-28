@@ -204,3 +204,9 @@ What I built:
 - An inventory manager with separation of concerns
 
 Time spent: 59mins 
+
+# Day 3 Log: 28 Mar, 2026
+What I learnt: 
+- More details about classes, attributes, methods and objects.
+
+Time spent: 1hr 31mins 
