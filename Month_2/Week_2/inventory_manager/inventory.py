@@ -1,9 +1,10 @@
 import json
 from product import Product
-
+from category import Category
 class Inventory:
     def __init__(self):
         self.products = []
+        self.categories = {}
 
     def add_product(self, product):
         self.products.append(product)
@@ -30,14 +31,25 @@ class Inventory:
 
     def total_value(self):
         return sum(p.total_value() for p in self.products)
+    
+    def add_category(self, category):
+        self.categories[category.name] = category
+    
+    def get_category(self, name):
+        return self.categories.get(name, None)
 
     def save_to_file(self, filename):
-        data = []
+        data = {
+    "categories": [{"name": c.name, "description": c.description} for c in self.categories.values()],
+    "products": []
+}
+
         for p in self.products:
-            data.append({
+            data["products"].append({
                 "name": p.name,
                 "price": p.price,
-                "quantity": p.quantity
+                "quantity": p.quantity,
+                "category": p.category.name if p.category else None
             })
         with open(filename, "w") as f:
             json.dump(data, f, indent=2)
@@ -46,9 +58,11 @@ class Inventory:
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
-        except FileNotFoundError:
+        except (FileNotFoundError, json.JSONDecodeError):
             return
+        self.categories = {c["name"]: Category(c["name"], c.get("description", "")) for c in data.get("categories", [])}
         self.products = []
-        for item in data:
-            p = Product(item["name"], item["price"], item["quantity"])
+        for item in data.get("products", []):
+            category = self.categories.get(item.get("category")) if item.get("category") else None
+            p = Product(item["name"], item["price"], item["quantity"], category)
             self.products.append(p)

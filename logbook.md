@@ -210,3 +210,9 @@ What I learnt:
 - More details about classes, attributes, methods and objects.
 
 Time spent: 1hr 31mins 
+
+# Day 4 Log: 29 Mar, 2026
+What I built: 
+- Added categories to my inventory project
+
+Time spent: 1hr 16mins 
