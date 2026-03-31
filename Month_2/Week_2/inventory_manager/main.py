@@ -26,9 +26,14 @@ def main():
             except ValueError:
                 print("Invalid number.")
                 continue
-            p = Product(name, price, quantity)
+            cat_name = input("Category (or leave empty for none): ").strip()
+            category = inv.get_category(cat_name) if cat_name else None
+            if cat_name and not category:
+                print(f"Category '{cat_name}' not found. Product will be added without category.")
+            p = Product(name, price, quantity, category)
             inv.add_product(p)
-            print("Product added.")
+            print("Product added.")  
+            
         elif choice == '2':
             name = input("Name of product to remove: ")
             if inv.remove_product(name):
