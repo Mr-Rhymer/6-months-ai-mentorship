@@ -1,6 +1,8 @@
 import json
+import csv   # at top of file
 from product import Product
 from category import Category
+
 class Inventory:
     def __init__(self):
         self.products = []
@@ -66,3 +68,41 @@ class Inventory:
             category = self.categories.get(item.get("category")) if item.get("category") else None
             p = Product(item["name"], item["price"], item["quantity"], category)
             self.products.append(p)
+
+   
+
+    def export_to_csv(self, filename):
+        """Export all products to a CSV file."""
+        with open(filename, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["name", "price", "quantity", "category"])
+            for p in self.products:
+               cat_name = p.category.name if p.category else ""
+               writer.writerow([p.name, p.price, p.quantity, cat_name])
+        print(f"Exported {len(self.products)} products to {filename}")
+
+    def import_from_csv(self, filename):
+        """Import products from a CSV file and add to inventory."""
+        try:
+            with open(filename, "r", encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              count = 0
+              for row in reader:
+                  name = row["name"]
+                  price = float(row["price"])
+                  quantity = int(row["quantity"])
+                  cat_name = row.get("category", "").strip()
+                  category = self.get_category(cat_name) if cat_name else None
+                # Optional: automatically create category if not found
+                  if cat_name and not category:
+                     print(f"Category '{cat_name}' not found. Creating it.")
+                     category = Category(cat_name)
+                     self.add_category(category)
+                  p = Product(name, price, quantity, category)
+                  self.add_product(p)
+                  count += 1
+              print(f"Imported {count} products from {filename}")
+        except FileNotFoundError:
+           print(f"File {filename} not found.")
+        except Exception as e:
+           print(f"Error reading CSV: {e}")

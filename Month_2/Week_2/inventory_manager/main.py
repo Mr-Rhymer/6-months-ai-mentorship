@@ -16,6 +16,8 @@ def main():
         print("6. Add category")
         print("7. List categories")
         print("8. Save and exit")
+        print("9. Export to CSV")
+        print("10. Import from CSV")
         choice = input("Choose an option: ")
 
         if choice == '1':
@@ -69,6 +71,12 @@ def main():
             inv.save_to_file("inventory.json")
             print("Data saved. Exiting.")
             break
+        elif choice == '9':
+            filename = input("Enter CSV filename to export (e.g., inventory.csv): ")
+            inv.export_to_csv(filename)
+        elif choice == '10':
+            filename = input("Enter CSV filename to import: ")
+            inv.import_from_csv(filename)
         else:
             print("Invalid choice.")
 

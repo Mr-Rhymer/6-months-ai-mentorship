@@ -216,3 +216,14 @@ What I built:
 - Added categories to my inventory project
 
 Time spent: 1hr 16mins 
+
+
+# WEEK 3
+# Day 1 Log - 1 Apr, 2026
+What I learnt:
+- CSV basics. I learnt how to read and write csv files.
+
+What I built:
+- I added csv import, saving to csv and loading from csv.
+
+Time spent: 1hr 30mins

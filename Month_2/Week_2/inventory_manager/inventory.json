@@ -1,4 +1,36 @@
 {
-  "categories": [],
-  "products": []
+  "categories": [
+    {
+      "name": "Food",
+      "description": ""
+    },
+    {
+      "name": "Fashion",
+      "description": "Clothes, shoes, watches and necklaces"
+    },
+    {
+      "name": "electronic gadgets",
+      "description": ""
+    }
+  ],
+  "products": [
+    {
+      "name": "Necklace",
+      "price": 100.0,
+      "quantity": 1,
+      "category": "Fashion"
+    },
+    {
+      "name": "laptop",
+      "price": 200.0,
+      "quantity": 1,
+      "category": "electronic gadgets"
+    },
+    {
+      "name": "Banku",
+      "price": 2.0,
+      "quantity": 4,
+      "category": "Food"
+    }
+  ]
 }
