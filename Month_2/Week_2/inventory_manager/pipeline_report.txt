@@ -1,0 +1,21 @@
+INVENTORY SUMMARY REPORT
+==============================
+Generated on: 2026-04-03 16:36
+Total Products: 8
+Total Inventory Value: $7598.00
+Products per Category:
+  Food: 1
+  Fashion: 1
+  electronic gadgets: 1
+  Electronics: 2
+  Furniture: 2
+  Stationery: 1
+Top 3 most expensive products
+  1. Laptop - $1200.00
+  2. laptop - $200.00
+  3. Desk - $150.00
+Low stock products (quantity < 5):
+  Necklace - 1 units
+  laptop - 1 units
+  Banku - 4 units
+  Desk - 2 units

@@ -233,3 +233,9 @@ What I built:
 - I added an option to generate a summary reportand save it in .csv format or a .txt format with the user's preference
 
 Time spent: 1hr 3mins
+
+# Day 3 Log: 3 Apr, 2026
+What I built:
+- I added a pipeline.py to my inventory project, that does all the work when i take in new products and wants to update the data in my project.
+
+Time spent: 36mins

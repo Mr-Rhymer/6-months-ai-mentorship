@@ -11,6 +11,18 @@
     {
       "name": "electronic gadgets",
       "description": ""
+    },
+    {
+      "name": "Electronics",
+      "description": ""
+    },
+    {
+      "name": "Furniture",
+      "description": ""
+    },
+    {
+      "name": "Stationery",
+      "description": ""
     }
   ],
   "products": [
@@ -31,6 +43,36 @@
       "price": 2.0,
       "quantity": 4,
       "category": "Food"
+    },
+    {
+      "name": "Laptop",
+      "price": 1200.0,
+      "quantity": 5,
+      "category": "Electronics"
+    },
+    {
+      "name": "Mouse",
+      "price": 25.0,
+      "quantity": 10,
+      "category": "Electronics"
+    },
+    {
+      "name": "Desk",
+      "price": 150.0,
+      "quantity": 2,
+      "category": "Furniture"
+    },
+    {
+      "name": "Chair",
+      "price": 85.0,
+      "quantity": 8,
+      "category": "Furniture"
+    },
+    {
+      "name": "Notebook",
+      "price": 3.0,
+      "quantity": 20,
+      "category": "Stationery"
     }
   ]
 }
