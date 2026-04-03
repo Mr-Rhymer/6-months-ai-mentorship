@@ -1,7 +1,8 @@
 import json
-import csv   # at top of file
+import csv   
 from product import Product
 from category import Category
+import datetime as dt
 
 class Inventory:
     def __init__(self):
@@ -106,3 +107,55 @@ class Inventory:
            print(f"File {filename} not found.")
         except Exception as e:
            print(f"Error reading CSV: {e}")
+
+    def generate_report(self, filename):
+        if filename.endswith(".txt"):
+            try:
+                with open(filename, "w") as f:
+                  f.write("INVENTORY SUMMARY REPORT\n")
+                  f.write("=" * 30 + "\n")
+                  f.write(f"Generated on: {dt.datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
+                  f.write(f"Total Products: {len(self.products)}\n")
+                  f.write(f"Total Inventory Value: ${self.total_value():.2f}\n")
+                  f.write("Products per Category:\n")
+                  for category in self.categories.values():
+                     products = [p for p in self.products if p.category == category]
+                     f.write(f"  {category.name}: {len(products)}\n")
+                     if self.categories.values() == "None":
+                       f.write(f"(no category): {len([p for p in self.products if not p.category])}\n")
+                  f.write(f"Top 3 most expensive products\n")
+                  sorted_products = sorted(self.products, key=lambda p: p.price, reverse=True)
+                  for i, p in enumerate(sorted_products[:3]):
+                     f.write(f"  {i+1}. {p.name} - ${p.price:.2f}\n")
+                  f.write(f"Low stock products (quantity < 5):\n")
+                  low_stock_products = [p for p in self.products if p.quantity < 5]
+                  for p in low_stock_products:
+                      f.write(f"  {p.name} - {p.quantity} units\n")
+                print(f"Report generated: {filename}")
+                
+            except Exception as e:
+                print(f"Error generating report: {e}")
+        elif filename.endswith(".csv"):
+            try:
+                with open(filename, "w", newline="", encoding="utf-8") as f:
+                    writer = csv.writer(f)
+                    writer.writerow(["Metric", "Value"])
+                    writer.writerow(["Generated on", dt.datetime.now().strftime('%Y-%m-%d %H:%M')])
+                    writer.writerow(["Total Products", len(self.products)])
+                    writer.writerow(["Total Inventory Value", f"${self.total_value():.2f}"])
+                    for category in self.categories.values():
+                        products = [p for p in self.products if p.category == category]
+                        writer.writerow([f"Products in {category.name}", len(products)])
+                    if any(p.category is None for p in self.products):
+                        writer.writerow(["Products with no category", len([p for p in self.products if p.category is None])])
+                    sorted_products = sorted(self.products, key=lambda p: p.price, reverse=True)
+                    for i, p in enumerate(sorted_products[:3]):
+                        writer.writerow([f"Top {i+1} most expensive product", f"{p.name} - ${p.price:.2f}"])
+                    low_stock_products = [p for p in self.products if p.quantity < 5]
+                    for p in low_stock_products:
+                        writer.writerow([f"Low stock product", f"{p.name} - {p.quantity} units"])
+                    print(f"Report generated: {filename}")
+            except Exception as e:
+                print(f"Error generating report: {e}")
+        else:        print("Invalid file format. Please use .txt or .csv")
+        

@@ -18,6 +18,7 @@ def main():
         print("8. Save and exit")
         print("9. Export to CSV")
         print("10. Import from CSV")
+        print("11. Generate report")
         choice = input("Choose an option: ")
 
         if choice == '1':
@@ -77,6 +78,9 @@ def main():
         elif choice == '10':
             filename = input("Enter CSV filename to import: ")
             inv.import_from_csv(filename)
+        elif choice == '11':
+            filename = input("Enter filename for report in .csv or .txt format: ")
+            inv.generate_report(filename)
         else:
             print("Invalid choice.")
 

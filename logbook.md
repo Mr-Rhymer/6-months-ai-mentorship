@@ -227,3 +227,9 @@ What I built:
 - I added csv import, saving to csv and loading from csv.
 
 Time spent: 1hr 30mins
+
+# Day 2 Log: 3 Apr, 2026
+What I built:
+- I added an option to generate a summary reportand save it in .csv format or a .txt format with the user's preference
+
+Time spent: 1hr 3mins
