@@ -1,0 +1,7 @@
+DATA CLEANING REPORT
+====================
+Total rows processed: 7
+Price corrections: 2
+Quantity corrections: 2
+Category filled: 2
+Unique categories: Electronics, Furniture, Stationery, Uncategorized

@@ -1,0 +1,8 @@
+name,price,quantity,category
+Laptop , 1200,5,Electronics
+Mouse,25,ten,Electronics
+Desk,150,-2,Furniture
+Chair,,8,
+Notebook,3,20,Stationery
+Keyboard,  ,5,Electronics
+Monitor,300,0,

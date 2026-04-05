@@ -239,3 +239,10 @@ What I built:
 - I added a pipeline.py to my inventory project, that does all the work when i take in new products and wants to update the data in my project.
 
 Time spent: 36mins
+
+# Day 4 Log: 5 Apr, 2026
+What I built:
+- A cleaner program that takes the name of a file that contains disorganised data, does corrections stores it in another file and generates a report about the cleaning. 
+
+What I learnt:
+- I'm getting more used to handling .csv files but I don't understand the logic behind today's code.
