@@ -246,3 +246,21 @@ What I built:
 
 What I learnt:
 - I'm getting more used to handling .csv files but I don't understand the logic behind today's code.
+
+# WEEK 4
+# Day 1 Log: 9 Apr, 2026
+What I learnt:
+- More about json files and csv files.
+ 
+What I built : 
+- json to csv converter.
+
+
+# MONTH 3
+# Week 1 
+# Day 1 Log: 11 Apr, 2026
+What I learnt:
+- Nothing I just copied codes and followed instructions
+
+What I built:
+- A new summarizer project
