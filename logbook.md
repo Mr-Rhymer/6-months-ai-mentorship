@@ -264,3 +264,15 @@ What I learnt:
 
 What I built:
 - A new summarizer project
+
+Time spent: 47mins
+
+
+# Day 2 Log: 12 Apr 2026
+What I learnt:
+- I'm having a little knowledge in how the API is called in a script
+
+What I built:
+- A script that uses AI to generate a response to a text assuming it was an email recieved based on the tone you give it
+
+Time spent: 34mins
