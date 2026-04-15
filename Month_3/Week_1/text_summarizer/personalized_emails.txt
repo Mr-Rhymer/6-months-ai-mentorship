@@ -1,0 +1,30 @@
+--- Email for Alice Johnson ---
+Subject: Expert AI Automation Consultation
+
+Dear Alice Johnson,
+
+I recently noted that TechCorp just launched a new AI product. To support your team, I'm offering a free 15-minute consultation on AI automation. This session can help you explore ways to streamline processes and enhance efficiency. Please let me know if you're interested, and we can schedule a call.
+
+Best regards,
+[Your Name]
+
+--- Email for Bob Smith ---
+Subject: Boost Efficiency with AI Automation at GreenEnergy
+
+Dear Bob Smith,
+
+I hope this email finds you well. As you're looking for efficiency solutions, I'd like to offer a free 15-minute consultation to explore how AI automation can benefit GreenEnergy's renewable initiatives. This session can help identify areas for improvement and potential cost savings. Please let me know if you're interested.
+
+Best regards,
+[Your Name]
+
+--- Email for Carol Davis ---
+Subject: Enhancing Patient Engagement with AI Automation
+
+Dear Carol Davis,
+
+I hope this email finds you well. I understand that HealthPlus is looking to implement patient engagement tools. I'd like to offer a free 15-minute consultation to discuss how AI automation can enhance patient experience. Please let me know if you're interested in scheduling a call.
+
+Best regards,
+[Your Name]
+
