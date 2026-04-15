@@ -276,3 +276,12 @@ What I built:
 - A script that uses AI to generate a response to a text assuming it was an email recieved based on the tone you give it
 
 Time spent: 34mins
+
+# Day 3 Log: 15 Apr 2026
+What I learnt:
+- I learnt to build the script myself for the first time in this week
+
+What I built:
+- A script that takes leads from a csv file and generate an email for each row of leads.
+
+Time spent: 1hr 12 mins
