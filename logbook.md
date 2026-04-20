@@ -284,4 +284,27 @@ What I learnt:
 What I built:
 - A script that takes leads from a csv file and generate an email for each row of leads.
 
-Time spent: 1hr 12 mins
+Time spent: 1hr 12 mins 
+
+# Day 4 Log: 16 Apr 2026
+What I learnt: 
+- How to add retry logic to API calls using loops and time.sleep.
+
+What I built:
+- Improved lead_emailer.py with automatic retries (3 attempts, exponential backoff).
+
+Time spent: 45 mins
+
+# Week 2 
+# Day 1 Log: 17 Apr 2026
+What I built:
+- A script like the lead_emailer but uses a second API to fetch extra info about the company before the email is generated
+
+Time spent: 39mins
+
+# Month 3, Week 3 – Bonus Features
+- Added tqdm progress bar
+- Added resume checkpoint
+- Added config.json
+- Added email validation with retry
+Time spent: 4 days about 2hr each day

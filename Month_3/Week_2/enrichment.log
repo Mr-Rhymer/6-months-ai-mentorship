@@ -1,0 +1,23 @@
+2026-04-19 19:39:18,785 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 19:39:21,651 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-19 19:39:24,310 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 15:43:03,964 - ERROR - Serper API error for GreenEnergy: HTTPSConnectionPool(host='google.serper.dev', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("HTTPSConnection(host='google.serper.dev', port=443): Failed to resolve 'google.serper.dev' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 15:43:04,278 - INFO - Retrying request to /openai/v1/chat/completions in 0.400613 seconds
+2026-04-20 15:43:04,682 - INFO - Retrying request to /openai/v1/chat/completions in 0.826232 seconds
+2026-04-20 15:43:05,510 - ERROR - Groq attempt 1 failed: Connection error.
+2026-04-20 15:43:06,513 - INFO - Retrying request to /openai/v1/chat/completions in 0.448623 seconds
+2026-04-20 15:43:06,965 - INFO - Retrying request to /openai/v1/chat/completions in 0.965692 seconds
+2026-04-20 15:43:07,950 - ERROR - Groq attempt 2 failed: Connection error.
+2026-04-20 15:43:09,953 - INFO - Retrying request to /openai/v1/chat/completions in 0.492095 seconds
+2026-04-20 15:43:10,448 - INFO - Retrying request to /openai/v1/chat/completions in 0.807154 seconds
+2026-04-20 15:43:11,258 - ERROR - Groq attempt 3 failed: Connection error.
+2026-04-20 15:43:11,258 - ERROR - Failed for Bob Smith: Connection error.
+2026-04-20 15:43:11,261 - ERROR - Serper API error for HealthPlus: HTTPSConnectionPool(host='google.serper.dev', port=443): Max retries exceeded with url: /search (Caused by NameResolutionError("HTTPSConnection(host='google.serper.dev', port=443): Failed to resolve 'google.serper.dev' ([Errno 11001] getaddrinfo failed)"))
+2026-04-20 15:43:11,262 - INFO - Retrying request to /openai/v1/chat/completions in 0.401333 seconds
+2026-04-20 15:43:11,666 - INFO - Retrying request to /openai/v1/chat/completions in 0.824956 seconds
+2026-04-20 15:43:12,494 - ERROR - Groq attempt 1 failed: Connection error.
+2026-04-20 15:43:13,497 - INFO - Retrying request to /openai/v1/chat/completions in 0.444503 seconds
+2026-04-20 15:43:13,944 - INFO - Retrying request to /openai/v1/chat/completions in 0.803812 seconds
+2026-04-20 15:43:14,750 - ERROR - Groq attempt 2 failed: Connection error.
+2026-04-20 15:43:19,166 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 15:43:19,194 - INFO - Success for Carol Davis
