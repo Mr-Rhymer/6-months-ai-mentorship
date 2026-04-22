@@ -308,3 +308,24 @@ Time spent: 39mins
 - Added config.json
 - Added email validation with retry
 Time spent: 4 days about 2hr each day
+
+
+# MONTH 4
+# WEEK 1
+# Day 1 Log: 21 Apr, 2026
+What I learnt:
+- About python flask and webhook
+
+
+
+#  Day 2 – Webhook triggers AI enrichment
+
+What I built:
+- A Flask webhook that appends incoming leads to `leads.csv` and runs `enrich_leads_try.py` automatically.
+- Fixed subprocess environment issues by using `sys.executable` and `cwd`.
+
+Key learning:
+- Subprocess inherits the calling script's environment, but the command `"python"` may resolve to a different interpreter.
+- Use `sys.executable` to ensure the same Python version and installed packages.
+
+Time spent: [1hr 48min]
