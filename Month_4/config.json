@@ -1,0 +1,10 @@
+{
+    "serper_api_key_env": "Serper_API_KEY",
+    "groq_api_key_env": "GROQ_API_KEY",
+    "max_retries": 3,
+    "serper_timeout": 10,
+    "output_file": "enriched_emails.txt",
+    "leads_file": "leads.csv",
+    "checkpoint_file": "last_processed.txt",
+    "log_file": "enrichment.log"
+}

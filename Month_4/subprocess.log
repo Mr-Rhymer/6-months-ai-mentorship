@@ -1,0 +1,18 @@
+--- 2026-04-22 18:45:29.764088 ---
+STDOUT:
+
+STDERR:
+
+Processing leads:   0%|          | 0/12 [00:00<?, ?it/s]
+Processing leads:  42%|####1     | 5/12 [00:09<00:13,  1.94s/it]
+Processing leads:  50%|#####     | 6/12 [00:12<00:13,  2.18s/it]
+Processing leads:  58%|#####8    | 7/12 [00:18<00:15,  3.01s/it]
+Processing leads:  67%|######6   | 8/12 [00:29<00:20,  5.14s/it]
+Processing leads:  75%|#######5  | 9/12 [00:32<00:13,  4.50s/it]
+Processing leads:  83%|########3 | 10/12 [00:39<00:10,  5.14s/it]
+Processing leads:  92%|#########1| 11/12 [00:42<00:04,  4.69s/it]
+Processing leads: 100%|##########| 12/12 [00:53<00:00,  6.44s/it]
+Processing leads: 100%|##########| 12/12 [00:53<00:00,  4.46s/it]
+
+EXIT CODE: 0
+

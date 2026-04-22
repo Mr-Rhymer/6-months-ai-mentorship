@@ -1,0 +1,281 @@
+2026-04-21 12:25:49,462 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.232.52.33:5000
+2026-04-21 12:25:49,463 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 12:25:49,466 - INFO -  * Restarting with stat
+2026-04-21 12:25:50,402 - WARNING -  * Debugger is active!
+2026-04-21 12:25:50,408 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 12:48:43,271 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\test_webhook.py', reloading
+2026-04-21 12:48:43,361 - INFO -  * Restarting with stat
+2026-04-21 12:48:44,133 - WARNING -  * Debugger is active!
+2026-04-21 12:48:44,137 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 12:49:16,547 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 12:49:16,549 - INFO - 127.0.0.1 - - [21/Apr/2026 12:49:16] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 13:05:16,982 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.233.176.42:5000
+2026-04-21 13:05:16,983 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 13:05:16,985 - INFO -  * Restarting with stat
+2026-04-21 13:05:17,748 - WARNING -  * Debugger is active!
+2026-04-21 13:05:17,750 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 13:05:47,019 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 13:05:47,870 - ERROR - Lead enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 13:05:47,871 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 13:05:47,872 - INFO - 127.0.0.1 - - [21/Apr/2026 13:05:47] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 14:39:04,155 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 14:39:04,299 - INFO -  * Restarting with stat
+2026-04-21 14:39:05,153 - WARNING -  * Debugger is active!
+2026-04-21 14:39:05,157 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 14:42:00,991 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 14:42:01,061 - INFO -  * Restarting with stat
+2026-04-21 14:42:01,699 - WARNING -  * Debugger is active!
+2026-04-21 14:42:01,702 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 14:44:13,057 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 14:44:13,129 - INFO -  * Restarting with stat
+2026-04-21 14:44:13,748 - WARNING -  * Debugger is active!
+2026-04-21 14:44:13,751 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 14:47:51,164 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.232.52.33:5000
+2026-04-21 14:47:51,164 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 14:47:51,167 - INFO -  * Restarting with stat
+2026-04-21 14:47:51,970 - WARNING -  * Debugger is active!
+2026-04-21 14:47:51,973 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 14:49:05,947 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 14:49:05,949 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 14:49:06,872 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 14:49:06,873 - INFO - 127.0.0.1 - - [21/Apr/2026 14:49:06] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 14:54:05,697 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 14:54:05,699 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 14:54:06,480 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 14:54:06,480 - INFO - 127.0.0.1 - - [21/Apr/2026 14:54:06] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 14:55:14,559 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 14:55:14,628 - INFO -  * Restarting with stat
+2026-04-21 14:55:15,271 - WARNING -  * Debugger is active!
+2026-04-21 14:55:15,273 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 14:55:24,269 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 14:55:24,270 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 14:55:25,070 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 14:55:25,071 - INFO - 127.0.0.1 - - [21/Apr/2026 14:55:25] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 15:03:59,978 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 15:04:00,055 - INFO -  * Restarting with stat
+2026-04-21 15:04:00,798 - WARNING -  * Debugger is active!
+2026-04-21 15:04:00,803 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 15:05:26,960 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.232.52.33:5000
+2026-04-21 15:05:26,960 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-21 15:05:26,963 - INFO -  * Restarting with stat
+2026-04-21 15:05:28,246 - WARNING -  * Debugger is active!
+2026-04-21 15:05:28,249 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 15:05:44,023 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 15:05:44,025 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 15:05:44,810 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 15:05:44,812 - INFO - 127.0.0.1 - - [21/Apr/2026 15:05:44] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 15:09:32,870 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-21 15:09:32,939 - INFO -  * Restarting with stat
+2026-04-21 15:09:33,652 - WARNING -  * Debugger is active!
+2026-04-21 15:09:33,655 - INFO -  * Debugger PIN: 388-215-153
+2026-04-21 15:12:29,182 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 15:12:29,184 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 15:12:29,995 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 15:12:29,996 - INFO - 127.0.0.1 - - [21/Apr/2026 15:12:29] "POST /webhook HTTP/1.1" 200 -
+2026-04-21 15:15:04,913 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-21 15:15:04,914 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-21 15:15:05,697 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-21 15:15:05,698 - INFO - 127.0.0.1 - - [21/Apr/2026 15:15:05] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 14:39:09,640 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 14:39:09,640 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 14:39:09,645 - INFO -  * Restarting with stat
+2026-04-22 14:39:10,439 - WARNING -  * Debugger is active!
+2026-04-22 14:39:10,443 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 14:41:16,586 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 14:41:16,588 - ERROR - Error writing to CSV: I/O operation on closed file.
+2026-04-22 14:41:17,523 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_v2.py']' returned non-zero exit status 1.
+2026-04-22 14:41:17,524 - INFO - 127.0.0.1 - - [22/Apr/2026 14:41:17] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 14:43:20,376 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 14:43:20,450 - INFO -  * Restarting with stat
+2026-04-22 14:43:21,089 - WARNING -  * Debugger is active!
+2026-04-22 14:43:21,093 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 14:56:49,269 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 14:56:49,269 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 14:56:49,272 - INFO -  * Restarting with stat
+2026-04-22 14:56:50,281 - WARNING -  * Debugger is active!
+2026-04-22 14:56:50,286 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 14:57:15,468 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 14:57:15,470 - INFO - Appended lead to leads.csv
+2026-04-22 14:57:16,208 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-22 14:57:16,209 - INFO - 127.0.0.1 - - [22/Apr/2026 14:57:16] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 15:05:47,309 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\enrich_leads_try.py', reloading
+2026-04-22 15:05:47,384 - INFO -  * Restarting with stat
+2026-04-22 15:05:48,013 - WARNING -  * Debugger is active!
+2026-04-22 15:05:48,015 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:34:46,494 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 15:34:46,497 - INFO - Appended lead to leads.csv
+2026-04-22 15:34:47,228 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-22 15:34:47,229 - INFO - 127.0.0.1 - - [22/Apr/2026 15:34:47] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 15:37:49,226 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 15:37:49,227 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 15:37:49,229 - INFO -  * Restarting with stat
+2026-04-22 15:37:49,959 - WARNING -  * Debugger is active!
+2026-04-22 15:37:49,962 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:39:20,159 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 15:39:20,161 - INFO - Appended lead to leads.csv
+2026-04-22 15:39:20,877 - ERROR - Enrichment failed: Command '['python', 'enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-22 15:39:20,878 - INFO - 127.0.0.1 - - [22/Apr/2026 15:39:20] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 15:45:21,208 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 15:45:21,276 - INFO -  * Restarting with stat
+2026-04-22 15:45:21,923 - WARNING -  * Debugger is active!
+2026-04-22 15:45:21,926 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:48:08,834 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 15:48:08,834 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 15:48:08,837 - INFO -  * Restarting with stat
+2026-04-22 15:48:09,624 - WARNING -  * Debugger is active!
+2026-04-22 15:48:09,628 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:48:32,928 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 15:48:32,930 - INFO - Appended lead to leads.csv
+2026-04-22 15:48:33,659 - ERROR - Enrichment failed: Command '['python', 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\enrich_leads_try.py']' returned non-zero exit status 1.
+2026-04-22 15:48:33,660 - INFO - 127.0.0.1 - - [22/Apr/2026 15:48:33] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 15:52:01,270 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 15:52:01,341 - INFO -  * Restarting with stat
+2026-04-22 15:52:01,949 - WARNING -  * Debugger is active!
+2026-04-22 15:52:01,952 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:52:16,137 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 15:52:16,139 - INFO - Appended lead to leads.csv
+2026-04-22 15:52:17,011 - ERROR - Enrichment failed (exit 1): Traceback (most recent call last):
+  File "C:\Users\All Nations\Documents\6-months-ai-mentorship\Month_4\enrich_leads_try.py", line 4, in <module>
+    from groq import Groq
+ModuleNotFoundError: No module named 'groq'
+
+2026-04-22 15:52:17,013 - INFO - 127.0.0.1 - - [22/Apr/2026 15:52:17] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 15:56:22,926 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 15:56:22,999 - INFO -  * Restarting with stat
+2026-04-22 15:56:23,610 - WARNING -  * Debugger is active!
+2026-04-22 15:56:23,612 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 15:56:38,027 - INFO - Received: {'name': 'Alice', 'company': 'TechCorp', 'industry': 'software'}
+2026-04-22 15:56:38,032 - INFO - Appended lead to leads.csv
+2026-04-22 15:56:56,721 - INFO - Lead enrichment completed successfully
+2026-04-22 15:56:56,722 - INFO - 127.0.0.1 - - [22/Apr/2026 15:56:56] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 16:10:59,690 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\.venv\\Lib\\site-packages\\itsdangerous\\url_safe.py', reloading
+2026-04-22 16:10:59,775 - INFO -  * Restarting with stat
+2026-04-22 16:30:03,532 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.132.107.130:8080
+2026-04-22 16:30:03,532 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 16:30:03,534 - INFO -  * Restarting with stat
+2026-04-22 16:30:04,259 - WARNING -  * Debugger is active!
+2026-04-22 16:30:04,263 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 16:31:13,082 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 16:31:13,151 - INFO -  * Restarting with stat
+2026-04-22 16:31:13,737 - WARNING -  * Debugger is active!
+2026-04-22 16:31:13,740 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 16:36:05,938 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\test_webhook.py', reloading
+2026-04-22 16:36:06,005 - INFO -  * Restarting with stat
+2026-04-22 16:36:06,559 - WARNING -  * Debugger is active!
+2026-04-22 16:36:06,562 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 16:38:34,846 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 16:38:34,846 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 16:38:34,848 - INFO -  * Restarting with stat
+2026-04-22 16:38:35,541 - WARNING -  * Debugger is active!
+2026-04-22 16:38:35,545 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 16:40:10,533 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 16:40:10,534 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 16:40:10,536 - INFO -  * Restarting with stat
+2026-04-22 16:40:11,358 - WARNING -  * Debugger is active!
+2026-04-22 16:40:11,361 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 16:42:18,005 - INFO - 127.0.0.1 - - [22/Apr/2026 16:42:18] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 16:43:37,167 - INFO - 127.0.0.1 - - [22/Apr/2026 16:43:37] "GET /health HTTP/1.1" 200 -
+2026-04-22 16:43:37,239 - INFO - 127.0.0.1 - - [22/Apr/2026 16:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-22 17:23:22,036 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 17:23:22,037 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 17:23:22,039 - INFO -  * Restarting with stat
+2026-04-22 17:23:22,889 - WARNING -  * Debugger is active!
+2026-04-22 17:23:22,892 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 17:26:29,849 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\test_webhook.py', reloading
+2026-04-22 17:26:29,919 - INFO -  * Restarting with stat
+2026-04-22 17:26:30,614 - WARNING -  * Debugger is active!
+2026-04-22 17:26:30,617 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 17:26:38,788 - INFO - 127.0.0.1 - - [22/Apr/2026 17:26:38] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 17:27:48,481 - INFO - 127.0.0.1 - - [22/Apr/2026 17:27:48] "POST /webhook HTTP/1.1" 200 -
+2026-04-22 17:29:12,363 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\test_webhook.py', reloading
+2026-04-22 17:29:12,442 - INFO -  * Restarting with stat
+2026-04-22 17:29:13,272 - WARNING -  * Debugger is active!
+2026-04-22 17:29:13,275 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:18:07,941 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 18:18:08,101 - INFO -  * Restarting with stat
+2026-04-22 18:18:08,757 - WARNING -  * Debugger is active!
+2026-04-22 18:18:08,760 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:20:25,574 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 18:20:25,574 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 18:20:25,576 - INFO -  * Restarting with stat
+2026-04-22 18:20:26,310 - WARNING -  * Debugger is active!
+2026-04-22 18:20:26,313 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:27:20,579 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 18:27:20,649 - INFO -  * Restarting with stat
+2026-04-22 18:27:21,320 - WARNING -  * Debugger is active!
+2026-04-22 18:27:21,323 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:28:57,112 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 18:28:57,113 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 18:28:57,115 - INFO -  * Restarting with stat
+2026-04-22 18:28:57,924 - WARNING -  * Debugger is active!
+2026-04-22 18:28:57,927 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:35:35,196 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 18:35:35,266 - INFO -  * Restarting with stat
+2026-04-22 18:35:35,919 - WARNING -  * Debugger is active!
+2026-04-22 18:35:35,922 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:37:23,066 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 18:37:23,150 - INFO -  * Restarting with stat
+2026-04-22 18:37:23,812 - WARNING -  * Debugger is active!
+2026-04-22 18:37:23,815 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:39:36,238 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\webhook_receiver.py', reloading
+2026-04-22 18:39:36,305 - INFO -  * Restarting with stat
+2026-04-22 18:39:36,966 - WARNING -  * Debugger is active!
+2026-04-22 18:39:36,970 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:40:48,580 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.132.107.130:5000
+2026-04-22 18:40:48,580 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-22 18:40:48,582 - INFO -  * Restarting with stat
+2026-04-22 18:40:49,388 - WARNING -  * Debugger is active!
+2026-04-22 18:40:49,390 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:44:12,581 - INFO -  * Detected change in 'C:\\Users\\All Nations\\Documents\\6-months-ai-mentorship\\Month_4\\test_webhook.py', reloading
+2026-04-22 18:44:12,678 - INFO -  * Restarting with stat
+2026-04-22 18:44:13,291 - WARNING -  * Debugger is active!
+2026-04-22 18:44:13,294 - INFO -  * Debugger PIN: 388-215-153
+2026-04-22 18:44:33,995 - INFO - Received: {'name': 'Zhun', 'company': 'XiaoMi', 'industry': 'Tech'}
+2026-04-22 18:44:33,998 - INFO - Appended lead to leads.csv
+2026-04-22 18:45:29,764 - INFO - Enrichment succeeded
+2026-04-22 18:45:29,765 - INFO - 127.0.0.1 - - [22/Apr/2026 18:45:29] "POST /webhook HTTP/1.1" 200 -
