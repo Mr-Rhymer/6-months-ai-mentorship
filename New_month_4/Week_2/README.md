@@ -15,3 +15,9 @@ It supports multiple tones, stores responses in SQLite, processes batches from C
 1. Install dependencies:
    ```bash
    pip install groq python-dotenv
+
+2. Get a Groq API key from console.groq.com.
+
+3. Create a .env file 
+
+4. Run the scripts
