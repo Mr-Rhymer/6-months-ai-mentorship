@@ -329,3 +329,23 @@ Key learning:
 - Use `sys.executable` to ensure the same Python version and installed packages.
 
 Time spent: [1hr 48min]
+
+
+
+
+
+Add a summary for Week 2:
+
+```markdown
+# New Month 4, Week 2 – Email Response Generator
+
+## Day 1–2: Basic responder with SQLite storage.
+## Day 3: Batch processing from CSV.
+## Day 4: Improved prompts and confidence scores (initial).
+## Day 5: CSV export with timestamp.
+## Day 6: JSON parsing, tone variations (formal, casual, informative, emphatic, urgent).
+## Day 7: Documentation and GitHub upload.
+
+**Time spent:** approx. 8 hours.  
+**Challenges:** Getting consistent JSON output from the AI; handling confidence score extraction robustly.  
+**Solution:** Switched to structured JSON prompt and fallback parsing.
