@@ -349,3 +349,120 @@ Add a summary for Week 2:
 **Time spent:** approx. 8 hours.  
 **Challenges:** Getting consistent JSON output from the AI; handling confidence score extraction robustly.  
 **Solution:** Switched to structured JSON prompt and fallback parsing.
+
+
+# Month 4, Week 3 – AI Lead Personalization (Serper + Groq)
+
+## Day 1 – Serper API Setup & First Search
+**What I learned:**  
+- How to use Serper API (Google search wrapper) to fetch live company information.
+- Making POST requests with custom headers (`X-API-KEY`, `Content-Type`).
+- Parsing JSON responses and extracting organic snippets.
+
+**What I built:**  
+`serper_test.py` – script that asks for a company name, calls Serper, and prints the first search result snippet.
+
+**Issues:** None – API key loaded correctly, first test worked.
+
+**Time spent:** ~45 min
+
+---
+
+## Day 2 – Extract Company Info (Multiple Fields)
+**What I learned:**  
+- Navigating nested JSON safely using `.get()` to avoid KeyError.
+- Returning structured data (dictionary with title, link, description).
+- Handling cases where no search results are found.
+
+**What I built:**  
+Enhanced `search_company()` to return `{"title": "...", "link": "...", "description": "..."}`.
+
+**Issues:** Initially forgot to handle missing 'link' field; added fallback to 'url'.
+
+**Time spent:** ~1 hour
+
+---
+
+## Day 3 – Combine Serper + Groq (Single Lead)
+**What I learned:**  
+- Chaining two external APIs: first fetch company info, then feed it into Groq.
+- Constructing prompts that include live web data for personalization.
+- Avoiding redundant API calls (store result, don't call twice).
+
+**What I built:**  
+`personalized_email.py` – asks for a company name, gets description from Serper, generates a custom outreach email with Groq.
+
+**Issues:** Initially called Serper twice; fixed by storing result in a variable.
+
+**Time spent:** ~1 hour 15 min
+
+---
+
+## Day 4 – Batch Mode from CSV
+**What I learned:**  
+- Reading leads from CSV file using `csv.DictReader`.
+- Looping through multiple leads, generating emails one by one.
+- Collecting results in a dictionary and saving to a text file.
+- Error handling per lead (continue on failure).
+
+**What I built:**  
+`batch_lead_emailer.py` – processes `leads.csv` (column: `company`), writes all emails to `generated_emails.txt`.
+
+**Issues:** Forgot to return the emails dictionary; corrected after testing.
+
+**Time spent:** ~1 hour 30 min
+
+
+
+## Day 5 – Add Retry Logic & Logging
+**What I learned:**  
+- Wrapping API calls in retry loops with exponential backoff.
+- Using Python's `logging` module to write timestamped logs to a file.
+- Separating user‑friendly prints from permanent logs.
+
+**What I built:**  
+Added `serper_with_retry()` function and replaced all `print` with `logging.info/error`.  
+Log file `lead_emailer.log` tracks each step.
+
+**Issues:** Forgot to raise exception after last retry; fixed by adding `raise`.
+
+**Time spent:** ~1 hour
+
+
+
+## Day 6 – Save Results to SQLite
+**What I learned:**  
+- Creating a SQLite database and table (`lead_emails`).
+- Inserting generated emails with company name and timestamp.
+- Using `sqlite3` module with parameterised queries.
+
+**What I built:**  
+Added `save_to_db()` to store all emails in `leads_emails.db`.  
+Table has columns: `email_id`, `company_name`, `email_content`, `timestamp`.
+
+**Issues:** Database was created but initial `CREATE TABLE` had syntax error (missing comma); fixed by rewriting.
+
+**Time spent:** ~45 min
+
+
+
+## Day 7 – Documentation & GitHub Upload
+**What I learned:**  
+- Writing a clear `README.md` for a multi‑file project.
+- Explaining setup, usage, features, and example output.
+- Ensuring `.env` is ignored and no secrets are pushed.
+
+**What I built:**  
+`README.md` with project description, installation steps, and how to run the batch processor.  
+Pushed everything to GitHub in `Month_4/Week_3/lead_personalizer/`.
+
+**Time spent:** ~30 min
+
+---
+
+## Week 3 Summary
+- **Total time:** approx. 7 hours
+- **Key achievements:** Integrated live web search into AI pipeline, built a production‑ready lead personalization system with retries, logging, and database storage.
+- **Hardest part:** Getting the JSON structure from Serper consistent and handling edge cases (no description, missing fields).
+- **What I would do differently:** Add unit tests for the retry functions.
+
