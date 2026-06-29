@@ -71,19 +71,25 @@ def ai_webhook():
         data = request.get_json()
         if not data:
             return jsonify({"error": "No JSON payload"}), 400
+
         text = data.get("text")
         if not text:
             return jsonify({"error": "Missing 'text' field"}), 400
+
         text = truncate_text(text)
         prompt = f"Summarize the following text in 2-3 sentences:\n\n{text}"
+
+        # Call Groq
         summary = call_groq_with_retry(prompt)
+
         return jsonify({"summary": summary}), 200
+
     except Exception as e:
-        # This will print the full error to Render logs
-        print("=" * 50)
+        # This prints the FULL error to Render logs
+        print("=" * 60)
         print("ERROR in /ai_webhook:")
         traceback.print_exc()
-        print("=" * 50)
+        print("=" * 60)
         return jsonify({"error": str(e)}), 500
 
 
