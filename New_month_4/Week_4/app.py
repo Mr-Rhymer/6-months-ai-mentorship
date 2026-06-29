@@ -62,22 +62,29 @@ def truncate_text(text, max_chars=12000):
     return text
 
 
-@app.route('/ai_webhook', methods= ['POST'])
+import traceback
+
+@app.route('/ai_webhook', methods=['POST'])
 @require_api_key
 def ai_webhook():
-    data = request.get_json()
-    if not data:
-        return jsonify({"error": "No JSON payload"}), 400
-    text = data.get("text")
-    if not text: 
-        return jsonify({"error": "Missing 'text' field in JSON payload"}), 400
-    text = truncate_text(text)
-    print("AI Webhook received:", data)
-    prompt = f"Summarize the following text in 2-3 sentences:\n\n{text}"
-    ai_summary = call_groq_with_retry(prompt)
-    # Here you would add your AI processing logic
-    ai_response = {"message": "AI processed your data", "input": data, "summary": ai_summary}
-    return jsonify(ai_response), 200
+    try:
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": "No JSON payload"}), 400
+        text = data.get("text")
+        if not text:
+            return jsonify({"error": "Missing 'text' field"}), 400
+        text = truncate_text(text)
+        prompt = f"Summarize the following text in 2-3 sentences:\n\n{text}"
+        summary = call_groq_with_retry(prompt)
+        return jsonify({"summary": summary}), 200
+    except Exception as e:
+        # This will print the full error to Render logs
+        print("=" * 50)
+        print("ERROR in /ai_webhook:")
+        traceback.print_exc()
+        print("=" * 50)
+        return jsonify({"error": str(e)}), 500
 
 
 
