@@ -75,6 +75,47 @@ def ai_webhook():
         traceback.print_exc()
         print("=" * 60)
         return jsonify({"error": str(e)}), 500
+    
+
+@app.route('/sentiment', methods=['POST'])
+def sentiment():
+    # 1. Authenticate
+    provided_key = request.headers.get('X-API-Key')
+    if provided_key != API_KEY:
+        return jsonify({"error": "Unauthorized"}), 401
+
+    # 2. Parse and validate JSON
+    data = request.get_json()
+    if not data:
+        return jsonify({"error": "No JSON payload"}), 400
+
+    text = data.get("text")
+    if not text:
+        return jsonify({"error": "Missing 'text' field"}), 400
+
+    # 3. Truncate if needed
+    text = truncate_text(text)
+
+    # 4. Build the sentiment prompt
+    prompt = f"""Analyze the sentiment of the following customer feedback.
+Return ONLY a valid JSON object with these three fields:
+- "sentiment": one of "positive", "neutral", or "negative"
+- "confidence": a number from 1 to 10
+- "summary": a one-sentence summary of the feedback
+
+Feedback: {text}
+
+Output only valid JSON, no other text."""
+
+    # 5. Call Groq and parse the response
+    try:
+        raw_response = call_groq_with_retry(prompt)
+        import json
+        result = json.loads(raw_response)
+        return jsonify(result), 200
+    except Exception as e:
+        print("Error in /sentiment:", e)
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
