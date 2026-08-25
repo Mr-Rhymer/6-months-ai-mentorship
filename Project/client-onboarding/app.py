@@ -59,8 +59,12 @@ def analyze_client(name, company, industry):
     - "priority": an integer from 1 to 10 (10 = highest priority)
     """
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
+        model="openai/gpt-oss-120b",
+        messages=[
+            {"role": "system", "content": "You are a helpful AI assistant."},
+            {"role": "developer", "content": "Provide concise, accurate, and helpful responses. Always return valid JSON when requested."},
+            {"role": "user", "content": prompt}
+        ],
         temperature=0.3,
         response_format={"type": "json_object"}
     )
@@ -82,8 +86,12 @@ def generate_welcome_email(name, company, industry):
     - Return ONLY the email body (no subject line)
     """
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
+        model="openai/gpt-oss-120b",
+        messages=[
+            {"role": "system", "content": "You are a helpful AI assistant."},
+            {"role": "developer", "content": "Provide concise, accurate, and helpful responses. Always return valid JSON when requested."},
+            {"role": "user", "content": prompt}
+        ],
         temperature=0.7
     )
     return response.choices[0].message.content.strip()
