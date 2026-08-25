@@ -17,12 +17,16 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
 def call_groq_with_retry(prompt, max_retries=3):
-    """Call Groq API with exponential backoff retry."""
+    """Call Groq API with exponential backoff retry using Harmony format."""
     for attempt in range(max_retries):
         try:
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",  # free, fast, reliable
-                messages=[{"role": "user", "content": prompt}]
+                model="openai/gpt-oss-120b",
+                messages=[
+                    {"role": "system", "content": "You are a helpful AI assistant."},
+                    {"role": "developer", "content": "Provide concise, accurate, and helpful responses. Always return valid JSON when requested."},
+                    {"role": "user", "content": prompt}
+                ]
             )
             return response.choices[0].message.content
         except Exception as e:
